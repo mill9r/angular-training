@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Product} from "../products.service";
+import {Product} from '../products.service';
+import {CartServiceService} from '../cart-service.service';
 
 export enum Category {
   Beverages,
@@ -26,14 +27,13 @@ export class ProductComponent implements OnInit {
   // shelfLife: number;
   // availableInStates: Array<String>;
 
-  constructor() {
+  constructor(public cart: CartServiceService) {
   }
 
   ngOnInit() {
   }
 
-  onBuy() {
-    console.log('Yahoo! You bought smth.')
-  }
-
+  // onBuy() {
+  //   console.log('Yahoo! You bought smth.')
+  // }
 }

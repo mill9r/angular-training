@@ -7,6 +7,6 @@
     <li>shelfLife {{product.shelfLife}}</li>
     <li>availableInStates {{product.availableInStates}}</li>
   </ul>
-  <input type="button" value="Buy" (click)="onBuy()">
+  <input type="button" value="Buy" (click)="cart.addToCart(product)">
 
 </div>
