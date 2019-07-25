@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Product} from '../products.service';
 import {CartServiceService} from '../cart-service.service';
 
+// Можно вынести в отдельный модуль
 export enum Category {
   Beverages,
   Meat,
