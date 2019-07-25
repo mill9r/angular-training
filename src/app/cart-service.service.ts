@@ -17,6 +17,8 @@ export class CartServiceService {
   }
 
   getCards(): Product[] {
+    // для чего эта проверка? в любом случа если нет данных,
+    // то будет пустой массив, так как вы им проинициализировали поле
     return this.cart.length !== 0 ? this.cart : [];
   }
 }
