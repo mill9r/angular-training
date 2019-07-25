@@ -1,0 +1,8 @@
+<ng-container *ngIf="cart.cart?.length !== 0; else elseBlock">
+  <ng-container *ngFor="let item of cart.cart">
+    <p>{{item.name}}:{{item.price}}</p>
+  </ng-container>
+</ng-container>
+<ng-template #elseBlock>
+  <p>Cart is empty</p>
+</ng-template>
