@@ -1,0 +1,15 @@
+<div class="card width space">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">name: {{product.name}}
+      <span class="badge badge-primary badge-pill"> {{product.price}}</span>
+    </li>
+    <li class="list-group-item">description: {{product.description}}</li>
+    <li class="list-group-item">isAvailable: {{product.isAvailable}} </li>
+    <li class="list-group-item">shelf life: <span class="badge badge-info badge-pill">{{product.shelfLife}}</span>
+    </li>
+    <li class="list-group-item">states: {{product.availableInStates}}</li>
+  </ul>
+  <input [ngClass]="{'btn-success':product.isAvailable,'btn-light': !product.isAvailable }" type="button"
+         class="btn  btn-sm" value="Buy" (click)="addProductToCart()">
+
+</div>

@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Category} from './product/product.component';
+import {Category} from './product-list/product/product.component';
 
 export interface Product {
   name: string;

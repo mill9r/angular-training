@@ -9,3 +9,8 @@ task 1:
   - task 1.9 :white_check_mark:
   - task 1.10 :white_check_mark:
   - task 1.11 :white_check_mark:
+  
+task 2:
+  - task 2.1 :white_check_mark:
+  - task 2.2 :white_check_mark:
+  - task 2.3 :white_check_mark:
